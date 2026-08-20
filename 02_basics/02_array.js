@@ -25,6 +25,3 @@ let unOrganizedArray = [1,2,3,4,[2,4,6,8],[1,2,[2,7]],5]
 let organizedArray = unOrganizedArray.flat(Infinity)
 
 console.log(organizedArray);
-
-let sum = organizedArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
-console.log(sum);
