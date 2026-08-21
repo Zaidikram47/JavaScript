@@ -120,6 +120,3 @@ studentsOfCollege.forEach(student => {
 });
 //studentsOfCollege[x]["school"]["province"]="punjab";
 console.log(studentsOfCollege);
-
-
-

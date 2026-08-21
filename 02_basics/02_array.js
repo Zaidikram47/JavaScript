@@ -21,6 +21,7 @@ let score = Array.of(score1,score2,score3, game);
 console.log(score);
 
 let unOrganizedArray = [1,2,3,4,[2,4,6,8],[1,2,[2,7]],5]
+console.log(unOrganizedArray);
 
 let organizedArray = unOrganizedArray.flat(Infinity)
 
