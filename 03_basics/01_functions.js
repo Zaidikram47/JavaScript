@@ -50,12 +50,16 @@ function arrayhandle(anyarray){
 arrayhandle(array)
 
 
-const games = {
-
-    names : ["PUBG", "Assassin's Creed", "Red Dead Redemption", "HITMAN WOA", "Counter Strike"],
-    age : 18,
+const zaid = {
+    name : 12,
 }
 
-let key = "genre";
-games["genre"] = "Cool"
+const ahmed = {
+    name : 12,
+}
 
+const ali = Object.assign({},zaid,ahmed);
+console.log(ali);
+
+array = [1,2,4,5,5]
+console.log(array.at(-1));
