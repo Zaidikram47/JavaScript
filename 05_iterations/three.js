@@ -64,14 +64,3 @@ for (const greet of greetings) {
     
 }
 
-{
-
-    let users = new Object()
-    users = {
-        username : "zaid",
-        age : 17
-    }
-    console.log(users["age"]);
-    
-
-}

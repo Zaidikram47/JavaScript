@@ -18,16 +18,22 @@ for (let index = 0; index <= 10; index++) {
     const HowManyTimes = (number) => {
         let counter = 0
         let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 2, 4, 61, 3, , 2, 8, 34, 8, 3, 47, 2, , 8, 2, 5, 9, 0, 6, 42, 4, 6, 9, 9, 7, 5, 3, 2, 3, 5, 6, 8, 0, 7, 6, 4, 2, 1, 2, 4, 5, 68, 9, 3]
+        let indexes =[]
         for (let index = 0; index < array.length; index++) {
             const element = array[index];
+            
             if (element == number) {
+                
+                indexes = index
                 counter = counter + 1
             }
         }
+        console.log(indexes);
+        
         console.log(`Number of times ` + number + ` Repeated : ` + counter)
     }
 
-    HowManyTimes(47)
+    HowManyTimes(4)
 
 }
 
