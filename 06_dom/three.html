@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    
+</body>
+
+<script>
+    const newdiv = (divname,classname,id,textname)=>{
+        const div = document.createElement(divname)
+        console.log(div);
+        div.className=classname
+        div.id=id
+        div.setAttribute('class' , 'heading')
+        div.style.color='green'
+        const text = document.createTextNode(textname)
+        div.appendChild(text)
+        document.body.appendChild(div)
+    }
+        newdiv('asd',"second",2,"Zaid")
+        newdiv('div',"third",47,'THIS DIV IS CREATED IN A FUNCTION')
+        
+</script>
+</html>

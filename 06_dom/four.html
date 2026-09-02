@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;" >
+    <ul class="language" id="2">
+        <li>Javascript</li>
+    </ul>
+    <script>
+     const addlanguage = (langName)=>{
+        const list = document.createElement('li');
+        list.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(list)
+     }
+     addlanguage("Rust")
+     addlanguage("Python")
+     addlanguage("Java")
+ 
+
+    //EDIT
+
+     const secondLang = document.querySelector('li:nth-child(2)')
+     const newlang = document.createElement('li')
+     newlang.textContent('C++');
+     secondLang.replaceWith(newlang)
+
+     //REMOVE
+
+     const deleteLang = document.querySelector('li:last-child')
+     deleteLang.remove()
+    </script>
+</body>
+</html>
