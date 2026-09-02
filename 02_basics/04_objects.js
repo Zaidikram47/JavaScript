@@ -34,4 +34,7 @@ let obj4 = Object.assign({}, obj1, obj2, obj3) // all entities of obj1,obj2,obj3
 
 // another way of merging all the objects into single object
 
-obj4 = { ...obj1, ...obj2, ...obj3 }
+obj5 = { ...obj1, ...obj2, ...obj3 }
+
+console.log(obj5);
+
