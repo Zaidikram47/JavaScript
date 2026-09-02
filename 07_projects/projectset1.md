@@ -64,3 +64,19 @@ form.addEventListener('submit', (e) => {
 
 
 ```
+
+# Project 3
+
+```javascript
+
+const clock = document.getElementById('clock');
+setInterval(() => {
+  const time = new Date();
+  clock.innerHTML = `<span>${time.toLocaleTimeString()}</span>`;
+}, 1000);
+const banner = document.getElementById('banner');
+banner.style.padding = '2px';
+banner.style.fontSize = '27px';
+
+
+```
