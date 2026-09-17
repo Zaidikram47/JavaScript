@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">huihuihui</h1>
+    <button class="b">start</button>
+</body>
+</html>
+<script>
+    const button = document.querySelector('.b')
+    const changename = function(){
+        document.querySelector('.heading').innerHTML="hui hui hui with spaces"
+    }
+    button.addEventListener('click',()=>{
+        setTimeout(changename,2000);
+    })
+    
+</script>

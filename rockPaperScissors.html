@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="js-cost-input" placeholder="Cost of Order">
+    <button>Calculate</button>
+    <p>Your GrandTotal is</p>
+</body>
+
+<script>
+
+    let shippingCost = 10
+
+    const calculate = document.querySelector('button') 
+
+    const CalculateTotal = ()=>{
+     const input = document.querySelector('#js-cost-input')
+     const cost = parseInt(input.value)
+     let total = 0
+     if (cost < 40) {
+       total =  cost + shippingCost
+     }
+     else {
+       total = cost
+     
+    }
+    return total;
+    
+    }
+    const grandTotal = calculate.addEventListener('click', ()=> document.querySelector('p').innerHTML=`Your GrandTotal is $${CalculateTotal()}`)
+    
+</script>
+
+</html>

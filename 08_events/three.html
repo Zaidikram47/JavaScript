@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+
+<script>
+
+   const changeName = ()=>{
+    return document.querySelector('h1').innerHTML="BEST JS SERIES!"
+   }
+   const timeout = setTimeout(changeName, 2000);
+   const buttonStop = document.querySelector('#stop')
+   const buttonStart = document.querySelector('#start')
+
+   buttonStart.addEventListener('click',function(){
+    timeout
+   })
+
+   buttonStop.addEventListener('click',function(){
+    clearTimeout(timeout)
+    })
+
+   </script>
+</html>
